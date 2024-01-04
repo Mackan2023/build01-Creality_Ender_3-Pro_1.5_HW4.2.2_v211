@@ -1,4 +1,4 @@
-Hello,
+Hello, yeas the ide of this is only for ender 3 pro hw v4.2.2 (v1.5) have bootloader.
 
 we can take it from the beginning.
 
