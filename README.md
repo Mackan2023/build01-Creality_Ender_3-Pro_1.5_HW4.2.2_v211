@@ -8,7 +8,7 @@ from there I think why not create one myself, for you and maybe with your help,
 
 I'm not a programmer or an electrician, so I'm asking you to help me with this project.
 
-and I am completely now in github with so if anyone can help me with this as well, you are very welcome in the whole thing with.
+and I am completely new in github so if anyone can help me with this as well, you are very welcome in with the whole thing.
 
 contact me here on github or at mackangotgard@gmail.com
 
