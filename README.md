@@ -1,5 +1,5 @@
 Hello, yeas the ide of this is only for ender 3 pro hw v4.2.2 (v1.5) have bootloader.
-
+[more info about this card](https://github.com/Mackan2023/build01-Creality_ender_3-pro_v4.2.2/blob/Creality-ender-3-pro-hw-v4.2.2-w-bootstrap/Test/readme.md)
 we can take it from the beginning.
 I've been looking for a clean Ender 3 pro software but can't find anything that makes sense at all, from there I think why not create one myself, for you and maybe with your help.
 
