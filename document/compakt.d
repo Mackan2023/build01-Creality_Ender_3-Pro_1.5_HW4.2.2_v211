@@ -1,3 +1,6 @@
+
+
+
 "C:\\users\\administrato\\.platformio\\packages\\framework-arduinoststm32-maple\\STM32F1\\cores\\maple\\HardwareTimer.cpp"	0002a166	string	112
 "C:\\users\\administrato\\.platformio\\packages\\framework-arduinoststm32-maple\\STM32F1\\cores\\maple\\ext_interrupts.cpp"	0002a1ee	string	113
 "C:\\users\\administrato\\.platformio\\packages\\framework-arduinoststm32-maple\\STM32F1\\cores\\maple\\libmaple\\dma_f1.c"	0002a285	string	112
@@ -10,6 +13,9 @@
 "C:\\users\\administrato\\.platformio\\packages\\framework-arduinoststm32-maple\\STM32F1\\cores\\maple\\pwm.cpp"	0002a7ce	string	102
 "C:\\users\\administrato\\.platformio\\packages\\framework-arduinoststm32-maple\\STM32F1\\cores\\maple\\stm32f1\\wirish_digital_f1.cpp"	0002a834	string	124
 "%$Marlin\\src\\HAL\\HAL_STM32F1\\SPI.cpp"	0002a8d4	string	37
+
+  
+  
 "FIRMWARE_NAME:Marlin Creality 3D SOURCE_CODE_URL:https://github.com/MarlinFirmware/Marlin"
 "PROTOCOL_VERSION:V1.0 MACHINE_TYPE:Ender-3 Pro EXTRUDER_COUNT:1 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff\n"	0002ad36	string	197
 
@@ -128,14 +134,6 @@
 " cold extrusion prevented\n"	0002c9ba	string	27
 " too long extrusion prevented\n"	0002c9d5	string	31
 "Home %s%s%s First"	0002c9f4	string	18
-00010374	0002ca58	undefined *	4
-0000cc65	0002ca5c	undefined *	4
-00008f7e	0002ca60	undefined *	4
-000059e9	0002ca64	undefined *	4
-0000338c	0002ca68	undefined *	4
-00001bd0	0002ca6c	undefined *	4
-00000e74	0002ca70	undefined *	4
-0000075f	0002ca74	undefined *	4
 " Count X:"	0002ca78	string	10
 "Cooling..."	0002cb89	string	11
 "Heating..."	0002cb94	string	11
@@ -193,12 +191,6 @@
 "  what():  "	0002d11c	string	12
 "_GLOBAL_"	0002d8c0	string	12
 "(anonymous namespace)"	0002d8cc	string	24
-00006425	0002d8e4	undefined *	4
-00005073	0002d8e8	undefined *	4
-00006c63	0002d8ec	undefined *	4
-00007464	0002d8f0	undefined *	4
-00007470	0002d8f4	undefined *	4
-00007571	0002d8f8	undefined *	4
 "string literal"	0002d8fc	string	16
 "decltype(auto)"	0002d918	string	16
 "{default arg#"	0002d938	string	16
@@ -222,11 +214,6 @@
 "_Fract"	0002dab8	string	8
 "operator"	0002dac4	string	12
 "operator "	0002dad0	string	12
-00006461	0002dadc	undefined *	4
-00005a73	0002dae0	undefined *	4
-00007367	0002dae4	undefined *	4
-0000283e	0002dae8	undefined *	4
-00007869	0002daec	undefined *	4
 "false"	0002db08	string	8
 "java resource "	0002db18	string	16
 "decltype ("	0002db28	string	12
@@ -257,66 +244,11 @@
 "basic_ostream"	0002dd64	string	16
 "std::iostream"	0002dd74	string	16
 "std::basic_iostream<char, std::char_traits<char> >"	0002dd84	string	52
-00006d61	0002ddc4	undefined *	4
-00004e61	0002ddc8	undefined *	4
-00003d26	0002ddcc	undefined *	4
-00005361	0002ddd0	undefined *	4
 "alignof "	0002dde8	string	12
-00007473	0002de04	undefined *	4
-00002928	0002de08	undefined *	4
-00006d63	0002de0c	undefined *	4
-00005664	0002de1c	undefined *	4
-00003d2f	0002de20	undefined *	4
-00006164	0002de24	undefined *	4
 "delete[] "	0002de28	string	12
 "dynamic_cast"	0002de38	string	16
 "delete "	0002de54	string	8
-00007364	0002de5c	undefined *	4
-00002a2e	0002de60	undefined *	4
-00007664	0002de64	undefined *	4
-00004f65	0002de6c	undefined *	4
-00003d5e	0002de70	undefined *	4
-00006f65	0002de74	undefined *	4
-00007165	0002de7c	undefined *	4
-00003d3d	0002de80	undefined *	4
-00004c66	0002de84	undefined *	4
-00005266	0002de88	undefined *	4
-00006c66	0002de8c	undefined *	4
-00007266	0002de90	undefined *	4
-00006567	0002de94	undefined *	4
-00003d3e	0002de98	undefined *	4
-00007467	0002de9c	undefined *	4
-0000536c	0002dea0	undefined *	4
 "operator\"\" "	0002deac	string	12
-0000736c	0002deb8	undefined *	4
-00003c3c	0002debc	undefined *	4
-0000746c	0002dec0	undefined *	4
-0000496d	0002dec8	undefined *	4
-00003d2d	0002decc	undefined *	4
-00004c6d	0002ded0	undefined *	4
-00003d2a	0002ded4	undefined *	4
-0000696d	0002ded8	undefined *	4
-00006c6d	0002dee0	undefined *	4
-00006d6d	0002dee4	undefined *	4
-00002d2d	0002dee8	undefined *	4
-0000616e	0002deec	undefined *	4
-0000656e	0002def8	undefined *	4
-00003d21	0002defc	undefined *	4
-0000746e	0002df00	undefined *	4
-0000526f	0002df10	undefined *	4
-00003d7c	0002df14	undefined *	4
-00006f6f	0002df18	undefined *	4
-00007c7c	0002df1c	undefined *	4
-00004c70	0002df24	undefined *	4
-00003d2b	0002df28	undefined *	4
-00006c70	0002df2c	undefined *	4
-00007070	0002df3c	undefined *	4
-00002b2b	0002df40	undefined *	4
-00007370	0002df44	undefined *	4
-00003e2d	0002df48	undefined *	4
-00004d72	0002df50	undefined *	4
-00003d25	0002df54	undefined *	4
-00005372	0002df58	undefined *	4
 "reinterpret_cast"	0002df64	string	20
 "sizeof..."	0002df88	string	12
 "static_cast"	0002df98	string	12
