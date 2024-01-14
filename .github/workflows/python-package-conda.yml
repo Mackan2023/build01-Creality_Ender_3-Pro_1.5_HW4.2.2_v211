@@ -18,7 +18,7 @@ jobs:
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
         echo $CONDA/bin >> $GITHUB_PATH
-    - name: $conda/build01-Creality_ender_3-pro_v4.2.2
+    - name: $conda/
       run: |
         conda env update --file environment.yml --name base
     - name: Lint with flake8
