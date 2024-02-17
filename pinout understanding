@@ -1,0 +1,182 @@
+What i have understan is this:
+
+
+
+/** Creality 4.2.2 (STM32F103RE) board pin assignments  */
+#define X_DIR_PIN          PB9 // Steppers X_DIR_PIN PB9
+#define Y_STEP_PIN         PB8 // Steppers Y_STEP_PIN PB8
+#define Y_DIR_PIN          PB7 // Steppers Y_DIR_PIN PB7
+#define Z_STEP_PIN         PB6 // Steppers Z_STEP_PIN PB6
+#define Z_DIR_PIN          PB5 // Steppers Z_DIR_PIN PB5
+#define E0_STEP_PIN        PB4 // Steppers E0_STEP_PIN PB4
+#define E0_DIR_PIN         PB3 // Steppers E0_DIR_PIN PB3
+#define UART5_RX_PIN       PD2 // default uses sdcard SDIO_CMD / Pins for documentation and sanity checks only / Hardware UART pins
+#define UART5_TX_PIN       PC12  // default uses sdcard SDIO_CK / Pins for documentation and sanity checks only / Hardware UART pins
+#define UART4_RX_PIN       PC11  // default uses sdcard SDIO_D3 / Pins for documentation and sanity checks only / Hardware UART pins
+#define UART4_TX_PIN       PC10  // default uses sdcard SDIO_D2 / Pins for documentation and sanity checks only / Hardware UART pins
+
+/**    Debug port/
+ *       -----
+ *       | 1 | VCC
+ *       | 2 | PA13 DEBUG_02_PIN (DIN)  */#define NEOPIXEL_PIN PA13 /**
+ *       | 3 | PA14 DEBUG_03_PIN
+ *       | 4 | GND
+ *       -----*/
+
+#define IIC_EEPROM_SCL     PA12 // EEPROM
+#define IIC_EEPROM_SDA     PA11 // EEPROM
+#define UART1_RX_PIN       PA10 // default uses CH340 TX / Pins for documentation and sanity checks only / Hardware UART pins
+#define UART1_TX_PIN       PA9  // default uses CH340 RX / Pins for documentation and sanity checks only / Hardware UART pins
+#define SD_DETECT_PIN      PC7  // SD Card
+#define SERVO0_PIN         PC6  // ?
+
+/*  RET6 12864 LCD
+*                                  ------
+*     BEEPER_PIN PC6  EXP3_01_PIN | 1  2 | EXP3_02_PIN PB2 Enc_Button
+      SERVO0_PIN PC6              | 1
+*      Enc_Left  PB10 EXP3_03_PIN | 3  4 | EXP3_04_PIN PB11 ?Reset?*/ 
+        #define UART3_TX_PIN PB10   3  4   #define UART3_RX_PIN PB11 /* default uses LCD connector / Pins for documentation and sanity checks only / Hardware UART pins
+/*    Enc_Right  PB14 EXP3_05_PIN   5  6 | EXP3_06_PIN PB13 (E) ENABLE SIGNAL
+AbortOutput(AO)  PB12 EXP3_07_PIN | 7  8 | EXP3_08_PIN PB15 (RW) Read/Write
+*   GND                           | 9 10 | 5V
+*                                  ------             
+*ENCODER
+*1 2 3	Right/GND/Left
+* 4 5 	 Ground/Button   */
+
+#define Z_MIN_PROBE_PIN    PB1 // BLTouch IN
+#define SERVO0_PIN         PB0 // BLTouch OUT
+#define TEMP_0_PIN         PC5 // TH1
+#define TEMP_BED_PIN       PC4 // TB1
+#define Z_STOP_PIN         PA7 // Limit Switches
+#define Y_STOP_PIN         PA6 // Limit Switches
+#define X_STOP_PIN         PA5 // Limit Switches
+#define FIL_RUNOUT_PIN     PA4 // Filament Runout Sensor "Pulled-high"
+#define UART2_RX_PIN       PA3 // not connected / Pins for documentation and sanity checks only / Hardware UART pins
+#define HEATER_BED_PIN     PA2 // HOT BED
+#define UART2_TX_PIN       PA2 // default uses HEATER_BED_PIN / Pins for documentation and sanity checks only / Hardware UART pins
+#define HEATER_0_PIN       PA1 // HEATER1
+#define FAN0_PIN           PA0 // FAN
+#define ENABLE_PIN         PC3 // Steppers Shared enable pin
+#define X_STEP_PIN         PC2 // Steppers
+
+#ifndef HAS_PIN_27_BOARD        ??? // Servos// // default uses LCD connector / Pins for documentation and sanity checks only / Hardware UART pins
+
+
+not understand yeat
+
+// *   = F103R8-B-C-D-E-F-G
+//                      | DIGITAL | ANALOG         | USART                    | TWI       | SPI                   | SPECIAL   |
+//                      |---------|----------------|--------------------------|-----------|-----------------------|-----------|
+#define PA0  PIN_A0  // | 0       | A0             |                          |           |                       |           |
+#define PA1  PIN_A1  // | 1       | A1             |                          |           |                       |           |
+#define PA2  PIN_A2  // | 2       | A2             | USART2_TX                |           |                       |           |
+#define PA3  PIN_A3  // | 2       | A2             | USART2_RX                |           |                       |           |
+#define PA4  PIN_A4  // | 4       | A4             |                          |           | SPI1_SS               |           |
+#define PA5  PIN_A5  // | 5       | A5             |                          |           | SPI1_SCK              |           |
+#define PA6  PIN_A6  // | 6       | A6             |                          |           | SPI1_MISO             |           |
+#define PA7  PIN_A7  // | 7       | A7             |                          |           | SPI1_MOSI             |           |
+#define PA8  8       // | 8       |                |                          |           |                       |           |
+#define PA9  9       // | 9       |                | USART1_TX                |           |                       |           |
+#define PA10 10      // | 10      |                | USART1_RX                |           |                       |           |
+#define PA11 11      // | 11      |                |                          |           |                       | USB_DM    |
+#define PA12 12      // | 12      |                |                          |           |                       | USB_DP    |
+#define PA13 13      // | 13      |                |                          |           |                       | SWD_SWDIO |
+#define PA14 14      // | 14      |                |                          |           |                       | SWD_SWCLK |
+#define PA15 15      // | 15      |                |                          |           | SPI1_SS               |           |
+//                      |---------|----------------|--------------------------|-----------|-----------------------|-----------|
+#define PB0  PIN_A8  // | 16      | A8             |                          |           |                       |           |
+#define PB1  PIN_A9  // | 17      | A9             |                          |           |                       |           |
+#define PB2  18      // | 18      |                |                          |           |                       | BOOT1     |
+#define PB3  19      // | 19      |                |                          |           | SPI1_SCK              |           |
+#define PB4  20      // | 20      |                |                          |           | SPI1_MISO             |           |
+#define PB5  21      // | 21      |                |                          |           | SPI1_MOSI             |           |
+#define PB6  22      // | 22      |                | USART1_TX                | TWI1_SCL  |                       |           |
+#define PB7  23      // | 23      |                | USART1_RX                | TWI1_SDA  |                       |           |
+#define PB8  24      // | 24      |                |                          | TWI1_SCL  |                       |           |
+#define PB9  25      // | 25      |                |                          | TWI1_SDA  |                       |           |
+#define PB10 26      // | 26      |                | USART3_TX*               | TWI2_SCL* |                       |           |
+#define PB11 27      // | 27      |                | USART3_RX*               | TWI2_SDA* |                       |           |
+#define PB12 28      // | 28      |                |                          |           | SPI2_SS*              |           |
+#define PB13 29      // | 29      |                |                          |           | SPI2_SCK*             |           |
+#define PB14 30      // | 30      |                |                          |           | SPI2_MISO*            |           |
+#define PB15 31      // | 31      |                |                          |           | SPI2_MOSI*            |           |
+//                      |---------|----------------|--------------------------|-----------|-----------------------|-----------|
+#define PC0  PIN_A10 // | 32      | A10            |                          |           |                       |           |
+#define PC1  PIN_A11 // | 33      | A11            |                          |           |                       |           |
+#define PC2  PIN_A12 // | 34      | A12            |                          |           |                       |           |
+#define PC3  PIN_A13 // | 35      | A13            |                          |           |                       |           |
+#define PC4  PIN_A14 // | 36      | A14            |                          |           |                       |           |
+#define PC5  PIN_A15 // | 37      | A15            |                          |           |                       |           |
+#define PC6  38      // | 38      |                |                          |           |                       |           |
+#define PC7  39      // | 39      |                |                          |           |                       |           |
+#define PC8  40      // | 40      |                |                          |           |                       |           |
+#define PC9  41      // | 41      |                |                          |           |                       |           |
+#define PC10 42      // | 42      |                | USART3_TX*               |           |                       |           |
+#define PC11 43      // | 43      |                | USART3_RX*               |           |                       |           |
+#define PC12 44      // | 44      |                |                          |           |                       |           |
+#define PC13 45      // | 45      |                |                          |           |                       |           |
+#define PC14 46      // | 46      |                |                          |           |                       | OSC32_IN  |
+#define PC15 47      // | 47      |                |                          |           |                       | OSC32_OUT |
+//                      |---------|----------------|--------------------------|-----------|-----------------------|-----------|
+#define PD0  48      // | 48      |                |                          |           |                       | OSC_IN    |
+#define PD1  49      // | 48      |                |                          |           |                       | OSC_OUT   |
+#define PD2  50      // | 50      |                |                          |           |                       |           |
+//                      |---------|----------------|--------------------------|-----------|-----------------------|-----------|
+
+// This must be a literal
+#define NUM_DIGITAL_PINS        51
+// This must be a literal with a value less than or equal to to MAX_ANALOG_INPUTS
+#define NUM_ANALOG_INPUTS       16
+
+// On-board LED pin number
+#ifndef LED_BUILTIN
+#define LED_BUILTIN             PB11
+#endif
+#define LED_GREEN               LED_BUILTIN
+
+// On-board user button
+#ifndef USER_BTN
+#define USER_BTN                PC13
+#endif
+
+// Override default Arduino configuration
+
+// SPI Definitions
+#if DEFAULT_SPI == 3
+  #define PIN_SPI_SS            PA15
+  #define PIN_SPI_MOSI          PB5
+  #define PIN_SPI_MISO          PB4
+  #define PIN_SPI_SCK           PB3
+#elif DEFAULT_SPI == 2
+  #define PIN_SPI_SS            PB12
+  #define PIN_SPI_MOSI          PB15
+  #define PIN_SPI_MISO          PB14
+  #define PIN_SPI_SCK           PB13
+#else
+  #define PIN_SPI_SS            PA4
+  #define PIN_SPI_MOSI          PA7
+  #define PIN_SPI_MISO          PA6
+  #define PIN_SPI_SCK           PA5
+#endif
+
+// I2C Definitions
+#define PIN_WIRE_SDA            PB7
+#define PIN_WIRE_SCL            PB6
+
+// Timer Definitions
+#define TIMER_TONE            TIM3  // TIMER_TONE must be defined in this file
+#define TIMER_SERVO           TIM2  // TIMER_SERVO must be defined in this file
+
+// UART Definitions
+// Define here Serial instance number to map on Serial generic name
+#define SERIAL_UART_INSTANCE    1
+
+// Default pin used for 'Serial1' instance
+#define PIN_SERIAL_RX           PA10
+#define PIN_SERIAL_TX           PA9
+
+// Extra HAL modules
+#if defined(STM32F103xE) || defined(STM32F103xG)
+#define HAL_DAC_MODULE_ENABLED
+#endif
